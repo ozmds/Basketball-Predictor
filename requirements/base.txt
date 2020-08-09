@@ -1,3 +1,9 @@
 bs4==0.0.1
 selenium==3.141.0
 webdriver-manager==3.2.1
+
+flake8-print==3.1.4
+flake8==3.7.9
+pep8-naming==0.10.0
+flake8-lineleak==1.0.2
+flake8-quotes==3.0.0
