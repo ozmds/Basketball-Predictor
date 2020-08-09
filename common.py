@@ -11,8 +11,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def create_driver():
     chrome_options = Options()
-    # chrome_options.add_argument("--headless")
-    # chrome_options.add_argument("--window-size=1920,1080")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--window-size=1920,1080")
     user_agent = ''.join(string.ascii_lowercase[random.randint(i, 25)] for i in range(10))
     chrome_options.add_argument("user-agent={}".format(user_agent))
     return webdriver.Chrome(executable_path=ChromeDriverManager().install(), chrome_options=chrome_options)
